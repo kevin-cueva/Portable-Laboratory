@@ -1,0 +1,13 @@
+#voltaje {
+    width: 100%;
+    height: 100px;
+}
+
+#amperio {
+    width: 100%;
+    height: 100px;
+}
+.topzise{
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
