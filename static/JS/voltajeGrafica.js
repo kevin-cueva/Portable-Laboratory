@@ -93,12 +93,13 @@ am5.ready(function() {
     axisDataItem.set("value", 0);
     bullet.get("sprite").on("rotation", function () {
       var value = axisDataItem.get("value");
+      //label.set("text", Number(value.toFixed(2)).toString() + "v");
       label.set("text", Number(value.toFixed(2)).toString() + "v");
     });
     
     setInterval(function () {
-      var value = Math.round(Math.random() * 10)+0.2;
-    
+      //var value = Math.round(Math.random() * 10)+0.2;
+      var value = globales.voltaje;
       axisDataItem.animate({
         key: "value",
         to: value,
