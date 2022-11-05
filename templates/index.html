@@ -31,16 +31,15 @@
                         <div class="col m-1 topzise">
                           Amperios
                           <div id="amperio"></div>
-
-                          </div>
                         </div>
+                    </div>
                         <div class="col" id="chartdiv">
                           Continuidad
-                        </div>
+                    </div>
                 
               </div>
               <div class="col">
-                Controladores
+                <h1>Fuentes</h1>
               </div>
             </div>
             <div class="row">
@@ -56,9 +55,18 @@
             </div>
           </div>
     </main>
-    <footer></footer>
-
-
+    <footer>
+      
+    </footer>
+    <script>
+      let globales ={
+        voltaje:0,
+        amp:0,
+      };
+      
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+    <script src="{{url_for('static', filename='JS/mqtt_IoT.js')}}"></script>
     <script src="{{url_for('static', filename='JS/voltajeGrafica.js')}}"></script>
     <script src="{{url_for('static', filename='JS/amperioGrafica.js')}}"></script>
 
