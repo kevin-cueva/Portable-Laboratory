@@ -97,7 +97,7 @@ am5.ready(function() {
     });
     
     setInterval(function () {
-      var value = Math.round(Math.random() * 10)+0.2;
+      var value = Number(data.mulAmp);
     
       axisDataItem.animate({
         key: "value",
