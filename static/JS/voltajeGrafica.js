@@ -93,13 +93,12 @@ am5.ready(function() {
     axisDataItem.set("value", 0);
     bullet.get("sprite").on("rotation", function () {
       var value = axisDataItem.get("value");
-      //label.set("text", Number(value.toFixed(2)).toString() + "v");
       label.set("text", Number(value.toFixed(2)).toString() + "v");
     });
     
     setInterval(function () {
-      //var value = Math.round(Math.random() * 10)+0.2;
-      var value = globales.voltaje;
+      var value = Number(data.mulVol);
+
       axisDataItem.animate({
         key: "value",
         to: value,
@@ -162,5 +161,5 @@ am5.ready(function() {
     
     // Make stuff animate on load
     chart.appear(1000, 100);
-    
+  
     }); // end am5.ready()
