@@ -39,6 +39,7 @@ function onMessageArrived(message) {
         data.mulVol = varMqtt.mulVol;
         data.mulAmp = varMqtt.mulAmp;
         data.func1 = varMqtt.func1;
+        data.func2 = varMqtt.func2;
        if(data.number == NaN){
         data.number = v;
        }

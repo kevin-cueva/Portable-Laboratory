@@ -13,6 +13,8 @@
     <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="//cdn.amcharts.com/lib/5/themes/Dark.js"></script>
+    <script src="//cdn.amcharts.com/lib/5/themes/Responsive.js"></script>
 
     <!--Paho-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
@@ -36,11 +38,6 @@
                           <div id="amperio"></div>
                         </div>
                     </div>
-
-                    <div class="col" id="chartdiv">
-                          Continuidad
-                    </div>
-                
               </div>
               <div class="col">
                 <h1>Fuentes</h1>
@@ -48,14 +45,17 @@
             </div>
             <div class="row">
               <div class="col">
-                Grafica 1
+                <h2>Grafica 1</h2>      
                 <div>
                   <div id="signal1"></div>
 
                 </div>
               </div>
               <div class="col">
-                Grafica 2
+                <h2>Grafica 2</h2>   
+                <div>
+                  <div id="signal2"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -66,7 +66,7 @@
     <script>
       const data ={
         "func1": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
-        "func2": [],
+        "func2": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
         "mulVol": "0",
         "mulAmp": "0",
         "funete1": "0",
@@ -80,6 +80,7 @@
     <script src="{{url_for('static', filename='JS/voltajeGrafica.js')}}"></script>
     <script src="{{url_for('static', filename='JS/amperioGrafica.js')}}"></script>
     <script src="{{url_for('static', filename='JS/signal1Grafica.js')}}"></script>
+    <script src="{{url_for('static', filename='JS/signal2Grafica.js')}}"></script>
 
 
 </body>
