@@ -7,6 +7,10 @@
     width: 100%;
     height: 100px;
 }
+#signal1 {
+    width: 100%;
+    height: 300px;
+  }
 .topzise{
     padding-top: 10px;
     padding-bottom: 30px;

@@ -16,7 +16,7 @@
 
     <!--Paho-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
-    <title>LapPortatiñ</title>
+    <title>LapPortatil</title>
 </head>
 <body>
     <header></header>
@@ -36,7 +36,8 @@
                           <div id="amperio"></div>
                         </div>
                     </div>
-                        <div class="col" id="chartdiv">
+
+                    <div class="col" id="chartdiv">
                           Continuidad
                     </div>
                 
@@ -48,12 +49,13 @@
             <div class="row">
               <div class="col">
                 Grafica 1
+                <div>
+                  <div id="signal1"></div>
+
+                </div>
               </div>
               <div class="col">
                 Grafica 2
-              </div>
-              <div class="col">
-                Otros
               </div>
             </div>
           </div>
@@ -63,7 +65,7 @@
     </footer>
     <script>
       const data ={
-        "func1": [],
+        "func1": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
         "func2": [],
         "mulVol": "0",
         "mulAmp": "0",
@@ -74,9 +76,10 @@
       
     </script>
    
+   <script src="{{url_for('static', filename='JS/mqtt_IoT.js')}}"></script>
     <script src="{{url_for('static', filename='JS/voltajeGrafica.js')}}"></script>
-    <script src="{{url_for('static', filename='JS/mqtt_IoT.js')}}"></script>
     <script src="{{url_for('static', filename='JS/amperioGrafica.js')}}"></script>
+    <script src="{{url_for('static', filename='JS/signal1Grafica.js')}}"></script>
 
 
 </body>
